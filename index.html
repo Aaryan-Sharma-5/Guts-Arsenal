@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gut's Arsenal</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <h1 class="hero-title">Berserker's Arsenal</h1>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Input Section -->
+    <div class="input-section">
+      <div class="input-group">
+        <input type="text" id="inputField" placeholder="Enter item name (e.g., Dragon Slayer Sword)">
+        <button class="btn" id="addButton">
+          <i class="fas fa-plus"></i>
+          Add to Arsenal
+        </button>
+      </div>
+
+      <div class="action-buttons">
+        <input type="text" id="searchField" placeholder="Search items..."> <i></i>
+        <button class="btn btn-secondary" id="clearAllBtn">
+          <i class="fas fa-trash-alt"></i>
+          Clear All
+        </button>
+        <button class="btn btn-secondary" id="sortBtn">
+          <i class="fas fa-sort-alpha-down"></i>
+          Sort A-Z
+        </button>
+        <button class="btn btn-secondary" id="exportBtn">
+          <i class="fas fa-download"></i>
+          Export List
+        </button>
+      </div>
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart-section">
+      <div class="cart-header">
+        <h2 class="cart-title">Your Arsenal</h2>
+        <div class="cart-total">Total: <span id="cartTotal">0</span> items</div>
+      </div>
+      <ul id="cartItems"></ul>
+    </div>
+  </div>
+
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>
