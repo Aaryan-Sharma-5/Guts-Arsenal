@@ -1,10 +1,7 @@
 // Firebase Configuration
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
 import { getDatabase, ref, push, onValue, remove, set } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
-
-const CONFIG = {
-  databaseURL: "https://shopapp-ad3be-default-rtdb.asia-southeast1.firebasedatabase.app/"
-}
+import { CONFIG } from './firebaseConfig.js'; 
 
 const STATE = {
   items: {}
